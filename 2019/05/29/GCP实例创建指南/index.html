@@ -14,13 +14,12 @@
   
 
 
-<html class="theme-next pisces use-motion" lang>
+<html class="theme-next pisces use-motion" lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="google-site-verification" content="JnDylbxoa9V1uJqCXBAyWZXeOx6YvJlFppWLksqpthw">
 
 
 
@@ -29,6 +28,8 @@
 
 
 
+
+  <meta name="google-site-verification" content="JnDylbxoa9V1uJqCXBAyWZXeOx6YvJlFppWLksqpthw">
 
 
 
@@ -72,7 +73,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '7.1.1',
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    sidebar: {"position":"left","display":"always","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
     back2top_sidebar: false,
     fancybox: false,
@@ -96,13 +97,14 @@
 
 
 
-  <meta name="description" content="GCP实例创建指南注册Google Cloud Platform很快，但是花了大半天时间配置SSH环境。所以下面对这个过程做一个记录  进入实例列表页面。操作：Compute Engine =&amp;gt; VM 实例 =&amp;gt; 创建实例   配置实例操作：  名称：实例名字，看你喜好 区域和地区：看你喜好 CPU和内存：根据实际用途配置 启动硬盘：看你喜好 防火墙：两个都允许 点击”安全”    粘">
+  <meta name="description" content="GCP实例创建指南注册Google Cloud Platform很快，但是花了大半天时间配置SSH环境。所以下面对这个过程做一个记录  进入实例列表页面。操作：Compute Engine =&amp;gt; VM 实例 =&amp;gt; 创建实例   配置实例操作：  名称：实例名字，看你喜好 区域和地区：看你喜好 CPU和内存：根据实际用途配置 启动硬盘：看你喜好 防火墙：两个都允许 点击”安全”">
+<meta name="keywords" content="Google,Mac,Linux,SSH">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GCP实例创建指南">
 <meta property="og:url" content="https://danielhuoo.github.io/2019/05/29/GCP实例创建指南/index.html">
 <meta property="og:site_name" content="Daniel Huo 的个人网站">
-<meta property="og:description" content="GCP实例创建指南注册Google Cloud Platform很快，但是花了大半天时间配置SSH环境。所以下面对这个过程做一个记录  进入实例列表页面。操作：Compute Engine =&amp;gt; VM 实例 =&amp;gt; 创建实例   配置实例操作：  名称：实例名字，看你喜好 区域和地区：看你喜好 CPU和内存：根据实际用途配置 启动硬盘：看你喜好 防火墙：两个都允许 点击”安全”    粘">
-<meta property="og:locale" content="default">
+<meta property="og:description" content="GCP实例创建指南注册Google Cloud Platform很快，但是花了大半天时间配置SSH环境。所以下面对这个过程做一个记录  进入实例列表页面。操作：Compute Engine =&amp;gt; VM 实例 =&amp;gt; 创建实例   配置实例操作：  名称：实例名字，看你喜好 区域和地区：看你喜好 CPU和内存：根据实际用途配置 启动硬盘：看你喜好 防火墙：两个都允许 点击”安全”">
+<meta property="og:locale" content="en">
 <meta property="og:image" content="http://psb5eq4ez.bkt.clouddn.com/gcp/1.png">
 <meta property="og:image" content="http://psb5eq4ez.bkt.clouddn.com/gcp/2.png">
 <meta property="og:image" content="http://psb5eq4ez.bkt.clouddn.com/gcp/3.png">
@@ -115,10 +117,10 @@
 <meta property="og:image" content="http://psb5eq4ez.bkt.clouddn.com/gcp/10.png">
 <meta property="og:image" content="http://psb5eq4ez.bkt.clouddn.com/gcp/11.png">
 <meta property="og:image" content="http://psb5eq4ez.bkt.clouddn.com/gcp/12.png">
-<meta property="og:updated_time" content="2019-05-30T09:26:06.982Z">
+<meta property="og:updated_time" content="2019-05-30T14:17:34.258Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GCP实例创建指南">
-<meta name="twitter:description" content="GCP实例创建指南注册Google Cloud Platform很快，但是花了大半天时间配置SSH环境。所以下面对这个过程做一个记录  进入实例列表页面。操作：Compute Engine =&amp;gt; VM 实例 =&amp;gt; 创建实例   配置实例操作：  名称：实例名字，看你喜好 区域和地区：看你喜好 CPU和内存：根据实际用途配置 启动硬盘：看你喜好 防火墙：两个都允许 点击”安全”    粘">
+<meta name="twitter:description" content="GCP实例创建指南注册Google Cloud Platform很快，但是花了大半天时间配置SSH环境。所以下面对这个过程做一个记录  进入实例列表页面。操作：Compute Engine =&amp;gt; VM 实例 =&amp;gt; 创建实例   配置实例操作：  名称：实例名字，看你喜好 区域和地区：看你喜好 CPU和内存：根据实际用途配置 启动硬盘：看你喜好 防火墙：两个都允许 点击”安全”">
 <meta name="twitter:image" content="http://psb5eq4ez.bkt.clouddn.com/gcp/1.png">
 
 
@@ -199,7 +201,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -385,7 +387,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Daniel Huo">
-      <meta itemprop="description" content>
+      <meta itemprop="description" content="Rome wasn't built in a day.">
       <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/10956671?s=460&v=4">
     </span>
 
@@ -441,7 +443,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-30 10:26:06" itemprop="dateModified" datetime="2019-05-30T10:26:06+01:00">2019-05-30</time>
+                <time title="Modified: 2019-05-30 15:17:34" itemprop="dateModified" datetime="2019-05-30T15:17:34+01:00">2019-05-30</time>
               
             
           </span>
@@ -488,7 +490,10 @@
       
 
       
-        <h3 id="GCP实例创建指南"><a href="#GCP实例创建指南" class="headerlink" title="GCP实例创建指南"></a>GCP实例创建指南</h3><p>注册Google Cloud Platform很快，但是花了大半天时间配置SSH环境。<br>所以下面对这个过程做一个记录</p>
+        <!-- <blockquote class="blockquote-center"><p>blah blah blah </p>
+</blockquote> -->
+
+<h3 id="GCP实例创建指南"><a href="#GCP实例创建指南" class="headerlink" title="GCP实例创建指南"></a>GCP实例创建指南</h3><p>注册Google Cloud Platform很快，但是花了大半天时间配置SSH环境。<br>所以下面对这个过程做一个记录</p>
 <hr>
 <h5 id="进入实例列表页面。"><a href="#进入实例列表页面。" class="headerlink" title="进入实例列表页面。"></a>进入实例列表页面。</h5><p>操作：Compute Engine =&gt; VM 实例 =&gt; 创建实例</p>
 <p><img src="http://psb5eq4ez.bkt.clouddn.com/gcp/1.png" alt></p>
@@ -563,8 +568,44 @@
     
 
     
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>Daniel Huo</li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    
+    <a href="https://danielhuoo.github.io/2019/05/29/GCP实例创建指南/" title="GCP实例创建指南">https://danielhuoo.github.io/2019/05/29/GCP实例创建指南/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.</li>
+</ul>
+
+      </div>
+    
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Google/" rel="tag"># Google</a>
+          
+            <a href="/tags/Mac/" rel="tag"># Mac</a>
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+            <a href="/tags/SSH/" rel="tag"># SSH</a>
+          
+        </div>
       
 
       
@@ -635,7 +676,7 @@
               <img class="site-author-image" itemprop="image" src="https://avatars3.githubusercontent.com/u/10956671?s=460&v=4" alt="Daniel Huo">
             
               <p class="site-author-name" itemprop="name">Daniel Huo</p>
-              <div class="site-description motion-element" itemprop="description"></div>
+              <div class="site-description motion-element" itemprop="description">Rome wasn't built in a day.</div>
           </div>
 
           
@@ -653,6 +694,29 @@
 
               
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
               
             </nav>
           
