@@ -64,6 +64,7 @@ footer:
   # If not defined, `author` from Hexo main config will be used.
   copyright:
 
+
   powered:
     # Hexo link (Powered by Hexo).
     enable: false
@@ -94,8 +95,8 @@ footer:
 creative_commons:
   license: by-nc-sa
   sidebar: false
-  post: false
-  language:
+  post: true
+  language: 
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
@@ -128,7 +129,7 @@ exturl: false
 
 # Google Webmaster tools verification.
 # See: https://www.google.com/webmasters
-#google_site_verification:
+google_site_verification: JnDylbxoa9V1uJqCXBAyWZXeOx6YvJlFppWLksqpthw
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmaster
@@ -162,8 +163,8 @@ menu:
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
-  #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
+  # schedule: /schedule/ || calendar
+  # sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
 
 # Enable / Disable menu icons / item badges.
@@ -256,7 +257,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: post
+  display: always
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
@@ -739,16 +740,16 @@ needmoreshare2:
 # ---------------------------------------------------------------
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 816cc148ea396efe79ba6b09f4a17c68
 
 # Growingio Analytics ID
 # Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
 #growingio_analytics: #your projectId
 
 # Google Analytics
-#google_analytics:
-#  tracking_id:
-#  localhost_ignored: true
+google_analytics:
+ tracking_id: UA-141151898-1
+ localhost_ignored: true
 
 # CNZZ count
 #cnzz_siteid:
@@ -827,7 +828,7 @@ busuanzi_count:
   post_views_icon: eye
 
 # Tencent analytics ID
-#tencent_analytics:
+# tencent_analytics: 
 
 # Tencent MTA ID
 #tencent_mta:
@@ -1202,4 +1203,4 @@ vendors:
 # Assets
 css: css
 js: js
-images: images
+images: http://psb5eq4ez.bkt.clouddn.com/

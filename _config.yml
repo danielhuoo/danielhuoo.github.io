@@ -5,10 +5,10 @@
 # Site
 title: Daniel Huo 的个人网站
 subtitle:
-description:
+description: Rome wasn't built in a day.
 keywords:
 author: Daniel Huo
-language:
+language: en
 timezone: Europe/London
 
 # URL
@@ -81,3 +81,8 @@ deploy:
   type: git
   branch: master
   repo: https://github.com/danielhuoo/danielhuoo.github.io.git
+
+sitemap: 
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
